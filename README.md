@@ -205,22 +205,23 @@ npm run dev
 ```
 
 ## 🧠 Key Implementation Highlights
-Clean MVC architecture (backend)
-JWT-based secure authentication
-Role-based authorization
-Dynamic React frontend (no hardcoding)
-API-driven UI rendering
-Separation of concerns
+- Clean MVC architecture (backend)
+- JWT-based secure authentication
+- Role-based authorization
+- Dynamic React frontend (no hardcoding)
+- API-driven UI rendering
+- Separation of concerns
+```
 ```
 ## ⚠️ Limitations / Future Improvements
-Kanban board (drag & drop)
-Task deadlines & reminders
-Notifications system
-File uploads
-Real-time updates (WebSockets)
+- Kanban board (drag & drop)
+- Task deadlines & reminders
+- Notifications system
+- File uploads
+- Real-time updates (WebSockets)
+```
 ```
 ## 👨‍💻 Author
 
 Saksham Agarwal
 B.Tech CSE | Full Stack Developer
-```
