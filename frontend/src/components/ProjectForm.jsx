@@ -7,7 +7,6 @@ export default function ProjectForm({ refresh }) {
   const [users, setUsers] = useState([]);
   const [members, setMembers] = useState([]);
 
-  // Fetch all users
   useEffect(() => {
     const fetchUsers = async () => {
       const res = await API.get("/users");
@@ -15,8 +14,6 @@ export default function ProjectForm({ refresh }) {
     };
     fetchUsers();
   }, []);
-
-  // Toggle member selection
   const handleMemberChange = (id) => {
     setMembers((prev) =>
       prev.includes(id) ? prev.filter((m) => m !== id) : [...prev, id],
@@ -28,7 +25,7 @@ export default function ProjectForm({ refresh }) {
 
     await API.post("/projects", {
       name,
-      members, // ✅ sending members
+      members, 
     });
 
     setName("");

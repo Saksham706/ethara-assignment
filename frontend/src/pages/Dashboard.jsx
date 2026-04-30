@@ -40,7 +40,6 @@ export default function Dashboard() {
         </>
       )}
 
-      {/* 🔥 PROJECT LIST WITH MEMBERS */}
       <div className="project-section">
         <h3>Projects</h3>
 
@@ -66,7 +65,6 @@ export default function Dashboard() {
         )}
       </div>
 
-      {/* TASKS */}
       <TaskList tasks={filteredTasks} refresh={fetchData} />
     </Layout>
   );

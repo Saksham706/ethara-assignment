@@ -12,7 +12,6 @@ export default function Layout({ children }) {
 
   return (
     <div className="layout">
-      {/* Top Navbar */}
       <div className="topbar">
         <div className="topbar-left">
           <h2>Task Manager</h2>
@@ -27,7 +26,6 @@ export default function Layout({ children }) {
         </div>
       </div>
 
-      {/* Main Content */}
       <div className="content">
         {children}
       </div>

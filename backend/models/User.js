@@ -24,5 +24,4 @@ const userSchema = new mongoose.Schema(
   { timestamps: true }
 );
 
-// ✅ THIS LINE IS CRITICAL
 module.exports = mongoose.model("User", userSchema);

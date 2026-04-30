@@ -1,4 +1,4 @@
-/* ===== GLOBAL VARIABLES ===== */
+
 :root {
   --bg-main: #0f172a;
   --bg-secondary: #1e293b;
@@ -14,7 +14,7 @@
   --error: #ef4444;
 }
 
-/* ===== BACKGROUND ===== */
+
 .auth-container {
   height: 100vh;
   display: flex;
@@ -26,14 +26,14 @@
   animation: bgMove 10s ease infinite;
 }
 
-/* Background animation */
+
 @keyframes bgMove {
   0% { background-position: 0% 50%; }
   50% { background-position: 100% 50%; }
   100% { background-position: 0% 50%; }
 }
 
-/* ===== FORM BOX (GLASS EFFECT) ===== */
+
 .auth-box {
   width: 360px;
   padding: 2rem;
@@ -48,7 +48,7 @@
   animation: fadeIn 0.5s ease-in-out;
 }
 
-/* Fade animation */
+
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -60,7 +60,7 @@
   }
 }
 
-/* ===== TITLE ===== */
+
 .auth-box h2 {
   text-align: center;
   margin-bottom: 1.5rem;
@@ -68,7 +68,6 @@
   font-weight: 600;
 }
 
-/* ===== INPUT FIELDS ===== */
 .auth-box input,
 .auth-box select {
   width: 100%;
@@ -85,19 +84,18 @@
   transition: all 0.25s ease;
 }
 
-/* Input focus glow */
 .auth-box input:focus,
 .auth-box select:focus {
   border-color: var(--primary);
   box-shadow: 0 0 10px rgba(99, 102, 241, 0.5);
 }
 
-/* Placeholder */
+
 .auth-box input::placeholder {
   color: var(--text-muted);
 }
 
-/* ===== BUTTON ===== */
+
 .auth-box button {
   width: 100%;
   padding: 12px;
@@ -113,21 +111,21 @@
   transition: all 0.3s ease;
 }
 
-/* Hover glow */
+
 .auth-box button:hover {
   background: var(--primary-hover);
   box-shadow: 0 0 15px rgba(99, 102, 241, 0.6);
   transform: translateY(-1px);
 }
 
-/* Disabled button */
+
 .auth-box button:disabled {
   opacity: 0.6;
   cursor: not-allowed;
   box-shadow: none;
 }
 
-/* ===== ERROR MESSAGE ===== */
+
 .error {
   background: rgba(239, 68, 68, 0.1);
   color: var(--error);
@@ -138,7 +136,7 @@
   margin-bottom: 10px;
 }
 
-/* ===== SWITCH TEXT ===== */
+
 .auth-switch {
   margin-top: 14px;
   text-align: center;
@@ -146,7 +144,7 @@
   color: var(--text-muted);
 }
 
-/* Link styling */
+
 .auth-switch a {
   color: var(--primary);
   text-decoration: none;
@@ -157,14 +155,11 @@
   text-decoration: underline;
 }
 
-/* ===== GLOBAL TRANSITIONS ===== */
 * {
   transition: all 0.2s ease-in-out;
 }
 
-/* ================= RESPONSIVE DESIGN ================= */
 
-/* Tablets */
 @media (max-width: 768px) {
   .auth-box {
     width: 90%;
@@ -187,7 +182,7 @@
   }
 }
 
-/* Mobile devices */
+
 @media (max-width: 480px) {
   .auth-container {
     padding: 1rem;
@@ -225,7 +220,6 @@
   }
 }
 
-/* Extra small devices */
 @media (max-width: 360px) {
   .auth-box {
     padding: 1.2rem;
