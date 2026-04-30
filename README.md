@@ -194,15 +194,15 @@ git clone https://github.com/yourusername/task-manager.git
 cd task-manager
 ```
 ## 2️⃣ Backend Setup
-cd backend
-npm install
-npm run start
+- cd backend
+- npm install
+- npm run start
 
 
 ## 3️⃣ Frontend Setup
-cd frontend
-npm install
-npm run dev
+- cd frontend
+- npm install
+- npm run dev
 
 
 ## 🧠 Key Implementation Highlights
