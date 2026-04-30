@@ -18,6 +18,10 @@ To design and implement a **Task Management System** with:
 
 ---
 
+## Live URL 
+- https://ethara-assignment.vercel.app/
+
+
 ## 🏗️ Tech Stack
 
 ### Frontend
