@@ -192,82 +192,35 @@ VITE_API_URL=http://localhost:5000/api
 ```bash
 git clone https://github.com/yourusername/task-manager.git
 cd task-manager
-2️⃣ Backend Setup
+```
+## 2️⃣ Backend Setup
 cd backend
 npm install
 npm run start
-3️⃣ Frontend Setup
+ ```
+## 3️⃣ Frontend Setup
 cd frontend
 npm install
 npm run dev
-🔌 API Endpoints
-🔐 Authentication
-POST /api/auth/register
-POST /api/auth/login
-👤 Users
-GET /api/users
-📁 Projects
-POST /api/projects
-GET /api/projects
-📝 Tasks
-POST /api/tasks
-GET /api/tasks
-PUT /api/tasks/:id
-🧪 Testing (Postman)
-Register a user
-Login → get JWT token
-Add token to headers:
-Authorization: Bearer <token>
-Test APIs:
-Create Project
-Add Members
-Create Task
-Assign Task
-Update Status
-🧠 Key Implementation Highlights
+```
+
+## 🧠 Key Implementation Highlights
 Clean MVC architecture (backend)
 JWT-based secure authentication
 Role-based authorization
 Dynamic React frontend (no hardcoding)
 API-driven UI rendering
 Separation of concerns
-⚠️ Limitations / Future Improvements
+```
+## ⚠️ Limitations / Future Improvements
 Kanban board (drag & drop)
 Task deadlines & reminders
 Notifications system
 File uploads
 Real-time updates (WebSockets)
-👨‍💻 Author
+```
+## 👨‍💻 Author
 
 Saksham Agarwal
 B.Tech CSE | Full Stack Developer
-
-📌 Notes for Reviewer
-
-This project focuses on:
-
-Clean and scalable architecture
-Proper role-based access implementation
-Functional completeness
-Maintainable code structure
-
-The system is designed to be extendable into a production-grade application.
-
-
----
-
-# ✅ You’re Ready to Submit
-
-This README:
-- Looks professional ✅  
-- Covers architecture ✅  
-- Explains features clearly ✅  
-- Matches assignment requirements ✅  
-
----
-
-If you want to **increase selection chances further**, next I can help you with:
-
-👉 “interview explanation script”  
-👉 “project demo explanation (2–3 mins)”  
-👉 “GitHub repo optimization” 🚀
+```
