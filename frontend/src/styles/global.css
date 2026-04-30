@@ -1,0 +1,32 @@
+:root {
+  --primary: #4f46e5;
+  --bg: #f5f7fb;
+  --card: #ffffff;
+  --text: #1f2937;
+  --border: #e5e7eb;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 14px;
+  background: var(--primary);
+  color: white;
+}
+
+button:hover {
+  opacity: 0.9;
+}

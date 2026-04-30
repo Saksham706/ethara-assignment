@@ -1,0 +1,176 @@
+/* ===== VARIABLES (same system as auth.css) ===== */
+:root {
+  --bg-main: #0f172a;
+  --bg-secondary: #1e293b;
+  --glass: rgba(255, 255, 255, 0.05);
+
+  --primary: #6366f1;
+  --primary-hover: #4f46e5;
+
+  --text-main: #e2e8f0;
+  --text-muted: #94a3b8;
+
+  --border: rgba(255, 255, 255, 0.1);
+
+  --admin: #22c55e;
+  --member: #38bdf8;
+}
+
+/* ===== LAYOUT ===== */
+.layout {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0f172a, #020617);
+  color: var(--text-main);
+}
+
+/* ===== TOPBAR ===== */
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 16px 30px;
+
+  background: var(--glass);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border);
+
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+/* Left */
+.topbar-left h2 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+/* Right */
+.topbar-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+/* ===== ROLE BADGE ===== */
+.role {
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+/* Admin */
+.role.admin {
+  background: rgba(34, 197, 94, 0.15);
+  color: var(--admin);
+}
+
+/* Member */
+.role.member {
+  background: rgba(56, 189, 248, 0.15);
+  color: var(--member);
+}
+
+/* ===== BUTTON ===== */
+.topbar button {
+  padding: 8px 14px;
+  background: var(--primary);
+  color: white;
+  border-radius: 8px;
+  font-size: 14px;
+
+  transition: all 0.3s ease;
+}
+
+.topbar button:hover {
+  background: var(--primary-hover);
+  box-shadow: 0 0 12px rgba(99, 102, 241, 0.6);
+  transform: translateY(-1px);
+}
+
+/* ===== CONTENT ===== */
+.content {
+  padding: 30px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* ===== CARD STYLE (Reusable for forms & tasks) ===== */
+.card {
+  background: var(--glass);
+  backdrop-filter: blur(10px);
+  border: 1px solid var(--border);
+
+  border-radius: 14px;
+  padding: 20px;
+  margin-bottom: 20px;
+
+  transition: 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+/* ===== HEADINGS ===== */
+.card h3 {
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+/* ===== INPUTS ===== */
+.card input,
+.card select {
+  padding: 10px;
+  margin-right: 10px;
+  border-radius: 8px;
+
+  border: 1px solid var(--border);
+  background: #020617;
+  color: var(--text-main);
+}
+
+/* ===== RESPONSIVE ===== */
+
+/* Tablet */
+@media (max-width: 768px) {
+  .topbar {
+    padding: 14px 20px;
+  }
+
+  .content {
+    padding: 20px;
+  }
+
+  .card {
+    padding: 16px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .topbar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .topbar-right {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .content {
+    padding: 15px;
+  }
+
+  .card input,
+  .card select {
+    width: 100%;
+    margin: 5px 0;
+  }
+}

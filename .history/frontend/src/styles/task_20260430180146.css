@@ -1,0 +1,13 @@
+.task-card {
+  background: white;
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.task-section {
+  margin-top: 20px;
+}

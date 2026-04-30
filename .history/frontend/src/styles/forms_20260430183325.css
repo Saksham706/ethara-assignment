@@ -1,0 +1,187 @@
+/* ===== FORM CARD ===== */
+.form-card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+
+  border-radius: 14px;
+  padding: 20px;
+  margin-bottom: 20px;
+
+  transition: all 0.3s ease;
+}
+
+/* Hover effect */
+.form-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+/* ===== TITLE ===== */
+.form-card h3 {
+  margin-bottom: 15px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #e2e8f0;
+}
+
+/* ===== INPUT + BUTTON ROW ===== */
+.form-card input {
+  width: 60%;
+  padding: 10px 12px;
+
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+
+  background: #020617;
+  color: #e2e8f0;
+
+  margin-right: 10px;
+
+  transition: all 0.25s ease;
+}
+
+/* Input focus */
+.form-card input:focus {
+  border-color: #6366f1;
+  box-shadow: 0 0 10px rgba(99, 102, 241, 0.5);
+}
+
+/* ===== BUTTON ===== */
+.form-card button {
+  padding: 10px 16px;
+
+  background: #6366f1;
+  color: white;
+  font-size: 14px;
+
+  border-radius: 8px;
+
+  transition: all 0.3s ease;
+}
+
+/* Hover */
+.form-card button:hover {
+  background: #4f46e5;
+  box-shadow: 0 0 12px rgba(99, 102, 241, 0.6);
+  transform: translateY(-1px);
+}
+
+/* ===== FLEX ALIGNMENT ===== */
+.form-card {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Row wrapper (auto alignment) */
+.form-card input,
+.form-card button {
+  display: inline-block;
+}
+
+/* ===== RESPONSIVE ===== */
+
+/* Tablet */
+@media (max-width: 768px) {
+  .form-card input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .form-card button {
+    width: 100%;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .form-card {
+    padding: 16px;
+  }
+
+  .form-card h3 {
+    font-size: 16px;
+  }
+
+  .form-card input,
+  .form-card button {
+    width: 100%;
+    font-size: 13px;
+  }
+}
+
+/* ===== FORM ROW (TASK FORM) ===== */
+.form-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+/* ===== INPUT ===== */
+.form-row input {
+  flex: 1.5;
+  min-width: 180px;
+}
+
+/* ===== SELECT ===== */
+.form-row select {
+  flex: 1;
+  min-width: 160px;
+
+  padding: 10px;
+  border-radius: 8px;
+
+  background: #020617;
+  color: #e2e8f0;
+
+  border: 1px solid rgba(255, 255, 255, 0.1);
+
+  transition: all 0.25s ease;
+}
+
+/* Select focus */
+.form-row select:focus {
+  border-color: #6366f1;
+  box-shadow: 0 0 10px rgba(99, 102, 241, 0.5);
+}
+
+/* ===== BUTTON ===== */
+.form-row button {
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+
+/* ===== RESPONSIVE ===== */
+
+/* Tablet */
+@media (max-width: 768px) {
+  .form-row {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .form-row input,
+  .form-row select,
+  .form-row button {
+    width: 100%;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .form-card {
+    padding: 16px;
+  }
+
+  .form-row {
+    gap: 10px;
+  }
+
+  .form-row input,
+  .form-row select,
+  .form-row button {
+    font-size: 13px;
+    padding: 10px;
+  }
+}

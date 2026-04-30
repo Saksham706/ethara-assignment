@@ -1,0 +1,312 @@
+/* ===== VARIABLES (keep consistent with app) ===== */
+:root {
+  --glass: rgba(255, 255, 255, 0.05);
+  --border: rgba(255, 255, 255, 0.1);
+
+  --primary: #6366f1;
+  --primary-hover: #4f46e5;
+
+  --text-main: #e2e8f0;
+  --text-muted: #94a3b8;
+
+  --card-bg: #020617;
+}
+
+/* ===== FORM CARD ===== */
+.form-card {
+  background: var(--glass);
+  backdrop-filter: blur(12px);
+  border: 1px solid var(--border);
+
+  border-radius: 14px;
+  padding: 20px;
+  margin-bottom: 20px;
+
+  transition: all 0.3s ease;
+}
+
+.form-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+/* ===== TITLE ===== */
+.form-card h3 {
+  margin-bottom: 15px;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--text-main);
+}
+
+/* ===== FORM ROW ===== */
+.form-row {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+/* ===== INPUT ===== */
+.form-row input {
+  flex: 1;
+  padding: 10px 12px;
+
+  border-radius: 8px;
+  border: 1px solid var(--border);
+
+  background: var(--card-bg);
+  color: var(--text-main);
+
+  transition: all 0.25s ease;
+}
+
+.form-row input:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 10px rgba(99, 102, 241, 0.5);
+}
+
+/* ===== BUTTON ===== */
+.form-row button {
+  padding: 10px 16px;
+
+  background: var(--primary);
+  color: white;
+
+  border-radius: 8px;
+  font-size: 14px;
+
+  transition: all 0.3s ease;
+}
+
+.form-row button:hover {
+  background: var(--primary-hover);
+  box-shadow: 0 0 12px rgba(99, 102, 241, 0.6);
+  transform: translateY(-1px);
+}
+
+/* ===== MEMBERS BOX ===== */
+.members-box {
+  margin-top: 10px;
+}
+
+.members-box p {
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: var(--text-muted);
+}
+
+/* ===== MEMBERS GRID ===== */
+.members-box {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 10px;
+}
+
+/* ===== MEMBER ITEM ===== */
+.members-box label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  padding: 10px;
+  border-radius: 10px;
+
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+
+  cursor: pointer;
+  font-size: 13px;
+
+  transition: all 0.25s ease;
+}
+
+/* Hover */
+.members-box label:hover {
+  border-color: var(--primary);
+  transform: translateY(-2px);
+}
+
+/* Checkbox hidden (custom style) */
+.members-box input[type="checkbox"] {
+  accent-color: var(--primary);
+  cursor: pointer;
+}
+
+/* Selected state */
+.members-box input[type="checkbox"]:checked + * {
+  font-weight: 600;
+}
+
+/* Optional highlight when checked */
+.members-box label:has(input:checked) {
+  border-color: var(--primary);
+  background: rgba(99, 102, 241, 0.1);
+}
+
+/* ===== RESPONSIVE ===== */
+
+/* Tablet */
+@media (max-width: 768px) {
+  .form-row {
+    flex-direction: column;
+  }
+
+  .form-row input,
+  .form-row button {
+    width: 100%;
+  }
+
+  .members-box {
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .form-card {
+    padding: 16px;
+  }
+
+  .form-card h3 {
+    font-size: 16px;
+  }
+
+  .members-box {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .members-box label {
+    font-size: 12px;
+    padding: 8px;
+  }
+}
+
+/* ===== TASK FORM ROW ===== */
+.form-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+/* ===== INPUT ===== */
+.form-row input {
+  flex: 1.5;
+  min-width: 180px;
+
+  padding: 10px 12px;
+  border-radius: 8px;
+
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: #020617;
+  color: #e2e8f0;
+
+  transition: all 0.25s ease;
+}
+
+.form-row input::placeholder {
+  color: #94a3b8;
+}
+
+/* Focus */
+.form-row input:focus {
+  border-color: #6366f1;
+  box-shadow: 0 0 10px rgba(99, 102, 241, 0.5);
+}
+
+/* ===== SELECT DROPDOWN ===== */
+.form-row select {
+  flex: 1;
+  min-width: 160px;
+
+  padding: 10px;
+  border-radius: 8px;
+
+  background: #020617;
+  color: #e2e8f0;
+
+  border: 1px solid rgba(255, 255, 255, 0.1);
+
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+/* Hover */
+.form-row select:hover {
+  border-color: #6366f1;
+}
+
+/* Focus */
+.form-row select:focus {
+  border-color: #6366f1;
+  box-shadow: 0 0 10px rgba(99, 102, 241, 0.5);
+}
+
+/* ===== BUTTON ===== */
+.form-row button {
+  flex-shrink: 0;
+  white-space: nowrap;
+
+  padding: 10px 16px;
+  border-radius: 8px;
+
+  background: #6366f1;
+  color: #fff;
+  font-size: 14px;
+
+  transition: all 0.3s ease;
+}
+
+/* Hover */
+.form-row button:hover {
+  background: #4f46e5;
+  box-shadow: 0 0 12px rgba(99, 102, 241, 0.6);
+  transform: translateY(-1px);
+}
+
+/* Disabled (optional future use) */
+.form-row button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+/* ===== FORM CARD ENHANCEMENT ===== */
+.form-card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* ===== RESPONSIVE ===== */
+
+/* Tablet */
+@media (max-width: 768px) {
+  .form-row {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .form-row input,
+  .form-row select,
+  .form-row button {
+    width: 100%;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .form-card {
+    padding: 16px;
+  }
+
+  .form-row {
+    gap: 10px;
+  }
+
+  .form-row input,
+  .form-row select,
+  .form-row button {
+    font-size: 13px;
+    padding: 10px;
+  }
+}
