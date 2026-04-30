@@ -197,12 +197,13 @@ cd task-manager
 cd backend
 npm install
 npm run start
- ```
+
+
 ## 3️⃣ Frontend Setup
 cd frontend
 npm install
 npm run dev
-```
+
 
 ## 🧠 Key Implementation Highlights
 - Clean MVC architecture (backend)
@@ -211,16 +212,15 @@ npm run dev
 - Dynamic React frontend (no hardcoding)
 - API-driven UI rendering
 - Separation of concerns
-```
-```
+
 ## ⚠️ Limitations / Future Improvements
 - Kanban board (drag & drop)
 - Task deadlines & reminders
 - Notifications system
 - File uploads
 - Real-time updates (WebSockets)
-```
-```
+
+
 ## 👨‍💻 Author
 
 Saksham Agarwal
